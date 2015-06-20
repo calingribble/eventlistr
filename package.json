@@ -1,0 +1,22 @@
+{
+  "name": "eventlistr",
+  "version": "0.0.0",
+  "main": "server/server.js",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "express": "^4.0.0",
+    "mongoose": "^3.8.31",
+    "morgan": "^1.0.1"
+  },
+  "devDependencies": {
+    "karma": "^0.12.36",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17",
+    "should": "^7.0.1",
+    "supertest": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
