@@ -12,6 +12,8 @@ mongoose.connect('mongodb://assessment:assessmentEvents2014@ds037977.mongolab.co
 
 app.use('/api/events', require('./api/event'));
 
+app.use(express.static(__dirname+'../../client'));
+
 app.listen(8080);
 
 exports = module.exports = app;
