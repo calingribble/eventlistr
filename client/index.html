@@ -1,14 +1,18 @@
 <div ng-app="app">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"></link>
-
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"></link>
 
   <script src="app.module.js"></script>
   <script src="app.state.js"></script>
 
-  <div class="continer">
+  <script src="components/list/list.controller.js"></script>
+
+  <script src="shared/services/event.service.js"></script>
+
+  <div class="container">
     <div ui-view></div>
   </div>
 
