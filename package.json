@@ -16,6 +16,9 @@
     "should": "^7.0.1",
     "supertest": "^1.0.1"
   },
+  "scripts": {
+    "test": "mocha 'server/**/*.spec.js'"
+  },
   "engines": {
     "node": ">=0.10.0"
   }
