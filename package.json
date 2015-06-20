@@ -9,7 +9,11 @@
     "morgan": "^1.0.1"
   },
   "devDependencies": {
+    "angular-mocks": "^1.4.1",
+    "chai": "^3.0.0",
     "karma": "^0.12.36",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.2.0",
     "mocha": "^2.2.5",
     "phantomjs": "^1.9.17",
@@ -17,7 +21,7 @@
     "supertest": "^1.0.1"
   },
   "scripts": {
-    "test": "mocha 'server/**/*.spec.js'"
+    "test": "mocha 'server/**/*.spec.js' && karma start karma.conf.js"
   },
   "engines": {
     "node": ">=0.10.0"
