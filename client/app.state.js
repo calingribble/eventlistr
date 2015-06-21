@@ -27,9 +27,22 @@ angular
       controllerAs: 'eventForm',
       templateUrl: 'components/event/form/form.html',
       resolve: {
+        event: [
+          function() {
+            return {};
+          }
+        ]
+      }
+    })
+    .state('edit', {
+      url: '/form/:id',
+      controller: 'EventFormController',
+      controllerAs: 'eventForm',
+      templateUrl: 'components/event/form/form.html',
+      resolve: {
         event: ['$stateParams', 'EventService',
           function(EventService, $stateParams) {
-            //return EventService.getEvent($stateParams.id);
+            return EventService.getEvent($stateParams.id);
           }
         ]
       }

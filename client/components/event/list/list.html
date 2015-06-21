@@ -24,10 +24,17 @@
       <span class="header-time"><i class="fa fa-clock-o"></i> {{event.from | date:'medium'}} - {{event.to | date:'medium'}}<br>
         <i class="fa fa-globe"></i> {{ event.location | uppercase }}</span><br>
     </accordion-heading>
-    <p>{{ event.description }}</p>
-    <i class="fa fa-users"></i><span class="subtitle"> Participants</span>
-    <div ng-repeat="participant in event.participants">
-      {{ participant }}
+    <div class="well">
+      <p>{{ event.description }}</p>
+      <i class="fa fa-users"></i><span class="subtitle"> Participants</span>
+      <div ng-repeat="participant in event.participants">
+        {{ participant }}
+      </div>
+    </div>
+
+    <div class="pull-right text-right">
+      <a ui-sref="edit({id: 'hey'})">Edit this Event <i class="fa fa-pencil-square-o"></i></a><br>
+      <a class="cancel-font" ng-click="eventList.deleteEvent(event._id)">Delete this Event <i class="fa fa-trash-o"></i></a>
     </div>
   </accordion-group>
 </accordion>

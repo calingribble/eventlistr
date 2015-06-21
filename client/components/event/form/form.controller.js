@@ -3,7 +3,8 @@ angular
   .controller('EventFormController', EventFormController);
 
   function EventFormController (EventService, event, $state) {
-    this.event = event || {};
+    console.log(event);
+    this.event = event;
 
     this.saveEvent = function () {
       this.event.participants = this.event.participants.split(',');

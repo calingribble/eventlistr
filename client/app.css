@@ -134,7 +134,7 @@ body {
   height: 52px;
   font-size: 1.5rem;
   outline: none;
-  background-color: #fb7c7c;
+  background-color: #fb5656;
   color: #ffffff;
 }
 
@@ -173,4 +173,24 @@ body {
 .input-group-addon {
   border: none;
   background-color: #ffffff;
+}
+
+.well {
+   border: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.cancel-font,
+.cancel-font:hover,
+.cancel-font:active {
+  color: #fb5656;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .btn-custom-add,
+  .btn-custom-save {
+    margin-bottom: 1.5rem;
+  }
 }
