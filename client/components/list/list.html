@@ -1,3 +1,27 @@
-<div ng-repeat="event in list.events">
-  {{ event.title }}
+<div class="row">
+  <div class="col-md-3">
+    <div id="custom-search-input">
+      <div class="input-group col-md-12">
+        <input type="text" ng-model="searchText" class="form-control input-lg" placeholder="Buscar" />
+        <span class="input-group-btn">
+          <button class="btn btn-info btn-lg" type="button">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
+<br>
+<accordion close-others="true">
+  <accordion-group is-open="false" ng-repeat="event in list.events | filter:searchText">
+    <accordion-heading>{{event.title}}<br>
+      <span class="header-time"><i class="fa fa-clock-o"></i> {{event.from | date:'medium'}} - {{event.to | date:'medium'}}<br>
+        <i class="fa fa-globe"></i> {{event.location | uppercase}}</span><br>
+    </accordion-heading>
+    Participants:
+    <div ng-repeat="participant in event.participants">
+      {{ participant }}
+    </div>
+  </accordion-group>
+</accordion>

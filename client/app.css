@@ -1,0 +1,102 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 2rem;
+  background-color: #f9f9f9;
+  color: #505050;
+}
+
+.navbar {
+  background: #fff;
+  height: 5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-header {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.navbar-brand {
+  font-size: 4rem;
+}
+
+.main-content {
+  padding-top: 5rem;
+}
+
+.title-first-half {
+  color: #9bd7d5;
+}
+
+.title-second-half {
+  color: #ff7260;
+}
+
+.panel-default {
+  border: none;
+  color: #505050;
+}
+.panel-title {
+  font-weight: 700 !important;
+  font-size: 2.5rem;
+  color: #505050;
+}
+
+.panel-heading {
+  background-color: #ffffff !important;
+}
+
+.accordion-toggle:hover {
+  color: #ff7260;
+  text-decoration: none;
+}
+
+.accordion-toggle:hover,
+.accordion-toggle:active,
+.accordion-toggle:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.panel-body {
+  border-top: none !important;
+}
+
+.header-time {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#custom-search-input{
+    padding: 3px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
