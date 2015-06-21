@@ -3,7 +3,6 @@ angular
   .controller('EventFormController', EventFormController);
 
   function EventFormController (EventService, event, $state) {
-    console.log(event);
     this.event = event;
 
     this.saveEvent = function () {

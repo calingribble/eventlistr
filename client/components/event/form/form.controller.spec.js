@@ -3,16 +3,15 @@ describe('EventFormController', function () {
   var EventService, controller, scope;
   beforeEach(module('app'));
   beforeEach(module(function ($provide) {
-    $provide.value('events', [{}]);
+    $provide.value('event', {});
   }));
-  beforeEach(inject(function (_EventService_, $controller,_events_) {
+  beforeEach(inject(function (_EventService_, $controller,_event_) {
     EventService = _EventService_;
-    events = _events_
+    event = _event_
     controller = $controller('EventFormController');
   }));
 
   it('does something', function () {
-    expect(true).to.be(true);
   });
 
 });
