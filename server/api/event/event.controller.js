@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var Event = require('./event.model');
 
 exports.index = function(req, res) {
@@ -28,6 +29,8 @@ exports.update = function(req, res) {
     if (err) { return handleError(res, err); }
     if(!event) { return res.send(404); }
     var updated = _.merge(event, req.body);
+    updated.participants = req.body.participants;
+    updated.markModified('participants');
     updated.save(function (err) {
       if (err) { return handleError(res, err); }
       return res.json(200, event);

@@ -41,7 +41,7 @@ angular
       templateUrl: 'components/event/form/form.html',
       resolve: {
         event: ['$stateParams', 'EventService',
-          function(EventService, $stateParams) {
+          function($stateParams, EventService) {
             return EventService.getEvent($stateParams.id);
           }
         ]

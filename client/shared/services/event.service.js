@@ -12,7 +12,7 @@ angular
     }
 
     this.updateEvent = function(id, event) {
-      return $http.post('/api/events/' + id, event);
+      return $http.put('/api/events/' + id, event);
     }
 
     this.saveEvent = function(event) {
