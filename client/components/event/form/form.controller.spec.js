@@ -11,7 +11,9 @@ describe('EventFormController', function () {
     controller = $controller('EventFormController');
   }));
 
-  it('does something', function () {
+  it('should have access to resolved event object', function () {
+    expect(event).to.exist;
+    expect(event).to.be.an('object');
   });
 
 });
