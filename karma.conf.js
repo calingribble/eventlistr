@@ -15,11 +15,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'client/bower_components/jquery/dist/jquery.js',
       'client/bower_components/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'client/bower_components/angular-ui-router/release/angular-ui-router.js',
+      'client/bower_components/bootstrap/dist/js/bootstrap.js',
       'client/bower_components/angular-bootstrap/ui-bootstrap.js',
       'client/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+      'client/bower_components/moment/min/moment.min.js',
+      'client/bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js',
       'client/app.module.js',
       'client/app.state.js',
       'client/components/**/*.js',

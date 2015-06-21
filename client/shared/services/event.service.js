@@ -6,4 +6,8 @@ angular
     this.getEvents = function() {
       return $http.get('/api/events');
     }
+
+    this.saveEvent = function(event) {
+      return $http.post('/api/events', event);
+    }
   }

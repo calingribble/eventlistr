@@ -70,38 +70,50 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+.custom-form-field{
+  padding: 3px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.custom-form-field input{
+  border: 0;
+  box-shadow: none;
+}
+
 #custom-search-input{
-    padding: 3px;
-    border-radius: 6px;
-    background-color: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  background-color: #fff;
 }
 
 #custom-search-input input{
-    border: 0;
-    box-shadow: none;
+  border: 0;
+  box-shadow: none;
 }
 
 #custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
 }
 
 #custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
 }
 
 #custom-search-input .glyphicon-search{
-    font-size: 23px;
+  font-size: 23px;
 }
 
-.btn-custom {
+.btn-custom-add {
   width: 100%;
   height: 52px;
   font-size: 1.5rem;
@@ -110,13 +122,39 @@ body {
   color: #ffffff;
 }
 
-.btn-custom:hover,
-.btn-custom:focus,
-.btn-custom:active {
+.btn-custom-add:hover,
+.btn-custom-add:focus,
+.btn-custom-add:active {
+  outline: none !important;
+  color: #ffffff;
+}
+
+.btn-custom-save {
+  width: 100%;
+  height: 52px;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: #9bd7d5;
+  color: #ffffff;
+}
+
+.btn-custom-save:hover,
+.btn-custom-save:focus,
+.btn-custom-save:active {
   outline: none !important;
   color: #ffffff;
 }
 
 .subtitle {
   font-weight: 700;
+}
+
+.has-success .form-control,
+.has-error .form-control {
+  -webkit-box-shadow: none;
+}
+
+.input-group-addon {
+  border: none;
+  background-color: #ffffff;
 }

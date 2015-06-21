@@ -1,0 +1,53 @@
+<form name="eventEditor.form" ng-submit="eventEditor.saveEvent()">
+  <div class="form-group custom-form-field" ng-class="{ 'has-error' : eventEditor.form.title.$invalid && !eventEditor.form.title.$pristine,
+    'has-success' : eventEditor.form.title.$valid && !eventEditor.form.title.$pristine }">
+    <input type="text" name="title" class="form-control" ng-model="eventEditor.event.title" placeholder="Title" ng-minlength="3" ng-maxlength="32" required>
+    </input>
+  </div>
+
+  <div class="form-group custom-form-field" ng-class="{ 'has-error' : eventEditor.form.description.$invalid && !eventEditor.form.description.$pristine,
+  'has-success' : eventEditor.form.description.$valid && !eventEditor.form.description.$pristine }">
+    <input type="text" name="description" class="form-control" ng-model="eventEditor.event.description" placeholder="Description" ng-minlength="3" ng-maxlength="180" required>
+    </input>
+  </div>
+
+  <div class="form-group custom-form-field" ng-class="{ 'has-error' : eventEditor.form.location.$invalid && !eventEditor.form.location.$pristine,
+  'has-success' : eventEditor.form.location.$valid && !eventEditor.form.location.$pristine }">
+    <input type="text" name="location" class="form-control" ng-model="eventEditor.event.location" placeholder="Location" ng-minlength="3" ng-maxlength="50" required>
+    </input>
+  </div>
+
+  <div class="form-group custom-form-field" ng-class="{ 'has-error' : eventEditor.form.participants.$invalid && !eventEditor.form.participants.$pristine,
+  'has-success' : eventEditor.form.participants.$valid && !eventEditor.form.participants.$pristine }">
+    <input type="text" name="participants" class="form-control" ng-model="eventEditor.event.participants" placeholder="Participants (separated by comma)" ng-minlength="1" ng-maxlength="400" required>
+    </input>
+  </div>
+
+  <div class="dropdown custom-form-field col-md-5 form-group">
+    <a class="dropdown-toggle" id="fromDropdown" role="button" data-toggle="dropdown" data-target="#" href="#">
+      <div class="input-group"><input type="text" placeholder="From" class="form-control" data-ng-model="eventEditor.event.from" required><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      </div>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <datetimepicker data-ng-model="eventEditor.event.from" data-datetimepicker-config="{ dropdownSelector: '#fromDropdown' }"/>
+    </ul>
+  </div>
+
+  <div class="col-md-2"></div>
+
+  <div class="dropdown custom-form-field col-md-5 form-group">
+    <a class="dropdown-toggle" id="toDropdown" role="button" data-toggle="dropdown" data-target="#" href="#">
+      <div class="input-group"><input type="text" placeholder="To" class="form-control" data-ng-model="eventEditor.event.to" required><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+      </div>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <datetimepicker data-ng-model="eventEditor.event.to" data-datetimepicker-config="{ dropdownSelector: '#toDropdown' }"/>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2 col-sm-12 col-xs-12 pull-right">
+      <button type="submit" id="submit" class="btn btn-custom-save pull-right" ng-disabled="eventEditor.form.$invalid"><i class="fa fa-check-circle"></i> Save Event</button>
+    </div>
+  </div>
+</form>
