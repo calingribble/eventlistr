@@ -8,8 +8,8 @@ exports.index = function(req, res) {
 };
 
 exports.create = function(req, res) {
-  Event.create(req.body, function(err, thing) {
+  Event.create(req.body, function(err, event) {
     if(err) { return handleError(res, err); }
-    return res.json(201, thing);
+    return res.json(201, event);
   });
 };

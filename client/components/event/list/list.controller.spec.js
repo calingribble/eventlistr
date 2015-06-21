@@ -8,7 +8,7 @@ describe('ListController', function () {
   beforeEach(inject(function (_EventService_, $controller,_events_) {
     EventService = _EventService_;
     events = _events_
-    controller = $controller('ListController');
+    controller = $controller('EventListController');
   }));
 
   it('has access to an array of events', function () {

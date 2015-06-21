@@ -8,12 +8,19 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname+'../../client'));
+
 mongoose.connect('mongodb://assessment:assessmentEvents2014@ds037977.mongolab.com:37977/events');
 
 app.use('/api/events', require('./api/event'));
 
-app.use(express.static(__dirname+'../../client'));
+var server = require('http').createServer(app);
+var socketio = require('socket.io')(server, {
+  serveClient: true,
+  path: '/socket.io-client'
+});
+require('./socketio')(socketio);
 
-app.listen(8080);
+server.listen(8080);
 
 exports = module.exports = app;

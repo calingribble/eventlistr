@@ -3,18 +3,33 @@ angular
   .config(config);
 
   function config ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/list');
+    $urlRouterProvider.otherwise('/form');
 
     $stateProvider
     .state('list', {
       url: '/list',
-      controller: 'ListController',
-      controllerAs: 'list',
-      templateUrl: 'components/list/list.html',
+      controller: 'EventListController',
+      controllerAs: 'eventList',
+      templateUrl: 'components/event/list/list.html',
       resolve: {
-        events: ['EventService',
-          function(EventService) {
-            return EventService.getEvents();
+        events: ['EventService','socket',
+          function(EventService, socket) {
+            return EventService.getEvents().success(function(events){
+              socket.syncUpdates('event', events);
+            });
+          }
+        ]
+      }
+    })
+    .state('form', {
+      url: '/form',
+      controller: 'EventFormController',
+      controllerAs: 'eventForm',
+      templateUrl: 'components/event/form/form.html',
+      resolve: {
+        event: ['$stateParams', 'EventService',
+          function(EventService, $stateParams) {
+            //return EventService.getEvent($stateParams.id);
           }
         ]
       }

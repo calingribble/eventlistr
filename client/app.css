@@ -129,6 +129,22 @@ body {
   color: #ffffff;
 }
 
+.btn-custom-cancel {
+  width: 100%;
+  height: 52px;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: #fb7c7c;
+  color: #ffffff;
+}
+
+.btn-custom-cancel:hover,
+.btn-custom-cancel:focus,
+.btn-custom-cancel:active {
+  outline: none !important;
+  color: #ffffff;
+}
+
 .btn-custom-save {
   width: 100%;
   height: 52px;

@@ -5,8 +5,12 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-socket-io/socket.js"></script>
   <script src="bower_components/moment/min/moment.min.js"></script>
   <script src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+
+  <script src="socket.io-client/socket.io.js"></script>
 
   <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css"></link>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
@@ -18,12 +22,13 @@
   <script src="app.module.js"></script>
   <script src="app.state.js"></script>
 
-  <script src="components/list/list.controller.js"></script>
+  <script src="components/event/list/list.controller.js"></script>
+  <script src="components/event/form/form.controller.js"></script>
 
   <script src="shared/directives/navbar/navbar.directive.js"></script>
-  <script src="shared/directives/event-form/event-form.directive.js"></script>
 
   <script src="shared/services/event.service.js"></script>
+  <script src="shared/services/socket.service.js"></script>
 
   <navbar></navbar>
   <div class="container main-content">
