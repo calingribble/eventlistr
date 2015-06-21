@@ -6,3 +6,10 @@ exports.index = function(req, res) {
     return res.json(200, events);
   });
 };
+
+exports.create = function(req, res) {
+  Event.create(req.body, function(err, thing) {
+    if(err) { return handleError(res, err); }
+    return res.json(201, thing);
+  });
+};
