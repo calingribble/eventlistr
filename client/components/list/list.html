@@ -18,11 +18,12 @@
 <br>
 <accordion close-others="true">
   <accordion-group is-open="false" ng-repeat="event in list.events | filter:searchText">
-    <accordion-heading>{{event.title}}<br>
+    <accordion-heading>{{ event.title }}<br>
       <span class="header-time"><i class="fa fa-clock-o"></i> {{event.from | date:'medium'}} - {{event.to | date:'medium'}}<br>
-        <i class="fa fa-globe"></i> {{event.location | uppercase}}</span><br>
+        <i class="fa fa-globe"></i> {{ event.location | uppercase }}</span><br>
     </accordion-heading>
-    Participants:
+    <p>{{ event.description }}</p>
+    <i class="fa fa-users"></i><span class="subtitle"> Participants</span>
     <div ng-repeat="participant in event.participants">
       {{ participant }}
     </div>
