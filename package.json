@@ -25,7 +25,8 @@
     "supertest": "^1.0.1"
   },
   "scripts": {
-    "test": "mocha 'server/**/*.spec.js' && karma start karma.conf.js"
+    "test": "mocha 'server/**/*.spec.js' && karma start karma.conf.js",
+    "run": "npm install && bower install && node server/server.js"
   },
   "engines": {
     "node": ">=0.10.0"
