@@ -19,7 +19,7 @@ describe('GET api/events', function() {
 describe('POST api/events', function() {
   it('should respond with a 201', function(done) {
     var event = {
-      "title": "Business Meeting",
+      "title": "Business Meeting: Spec Generated",
       "from":"2015-07-15T20:20:00.000Z",
       "to":"2015-08-02T09:03:00.000Z",
       "location":"Los Angeles, CA",
