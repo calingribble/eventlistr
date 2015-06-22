@@ -21,6 +21,6 @@ var socketio = require('socket.io')(server, {
 });
 require('./socketio')(socketio);
 
-server.listen(8080);
+server.listen(process.env.PORT || 8080);
 
 exports = module.exports = app;
