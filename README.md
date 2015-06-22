@@ -11,8 +11,8 @@ Check it out: [eventlistr.herokuapp.com](http://eventlistr.herokuapp.com/)
 ### How to run this locally:
 
 ```
-git clone git@github.com:calingribble/eventlistr.git
-cd eventlistr
-npm run serve
+$ git clone git@github.com:calingribble/eventlistr.git
+$ cd eventlistr
+$ npm run serve
 ```
 
