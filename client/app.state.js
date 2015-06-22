@@ -2,8 +2,9 @@ angular
   .module('app')
   .config(config);
 
-  function config ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/form');
+  function config ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $urlRouterProvider.otherwise('/list');
+    $locationProvider.html5Mode(true);
 
     $stateProvider
     .state('list', {
