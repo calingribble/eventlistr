@@ -1,6 +1,6 @@
 body {
   font-family: 'PT Sans', sans-serif;
-  padding-top: 2rem;
+  padding-top: 4rem;
   background-color: #f9f9f9;
   color: #505050;
 }
@@ -116,7 +116,7 @@ body {
 .btn-custom-add {
   width: 100%;
   height: 52px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   outline: none;
   background-color: #ff7260;
   color: #ffffff;
@@ -193,4 +193,8 @@ body {
   .btn-custom-save {
     margin-bottom: 1.5rem;
   }
+}
+
+.navbar {
+  height: 7rem;
 }
