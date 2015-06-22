@@ -1,4 +1,17 @@
-<div ng-app="app">
+<!doctype html>
+<head>
+  <title>eventlistr</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap.css"></link>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+  <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"></link>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"></link>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Cabin+Sketch' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="app.css"></link>
+</head>
+
+<body ng-app="app" resize>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -11,13 +24,6 @@
   <script src="bower_components/lodash/lodash.js"></script>
 
   <script src="socket.io-client/socket.io.js"></script>
-
-  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap.css"></link>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
-  <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"></link>
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"></link>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Cabin+Sketch' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="app.css"></link>
 
   <script src="app.module.js"></script>
   <script src="app.state.js"></script>
@@ -35,4 +41,5 @@
     <div ui-view></div>
   </div>
 
-</div>
+  </div>
+  </html>
