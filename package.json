@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "mocha 'server/**/*.spec.js' && karma start karma.conf.js",
-    "run": "npm install && bower install && node server/server.js"
+    "serve": "npm install && bower install && node server/server.js"
   },
   "engines": {
     "node": ">=0.10.0"
