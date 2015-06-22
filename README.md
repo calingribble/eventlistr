@@ -5,6 +5,8 @@ calingribble/eventlistr](https://codeship.com/projects/7eb846a0-f9af-0132-6080-2
 
 An awesome app for tracking events!
 
+![alt text](http://eventlistr.herokuapp.com/images/eventlistr-screenshot.png "eventlistr screenshot")
+
 ### How to run this locally:
 
 ```
