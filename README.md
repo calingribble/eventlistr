@@ -1,7 +1,16 @@
+[ ![Codeship Status for
+calingribble/eventlistr](https://codeship.com/projects/7eb846a0-f9af-0132-6080-228d89dce612/status?branch=master)](https://codeship.com/projects/86853)
+
 eventlistr
 ==========
 
 An awesome app for tracking events!
 
-[ ![Codeship Status for
-calingribble/eventlistr](https://codeship.com/projects/7eb846a0-f9af-0132-6080-228d89dce612/status?branch=master)](https://codeship.com/projects/86853)
+### How to run this locally:
+
+```
+git clone git@github.com:calingribble/eventlistr.git
+cd eventlistr
+npm run serve
+```
+
